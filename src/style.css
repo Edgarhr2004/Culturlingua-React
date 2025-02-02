@@ -706,3 +706,110 @@ body {
 .home-container {
   margin-top: 80px; /* ✅ Push content down to avoid being hidden */
 }
+
+
+.modalidades {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.modalidades h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modalidades-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.modalidad {
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modalidad:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.modalidad img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image fills the circle */
+  border-radius: 50%;
+}
+
+.modalidad-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.next-dates {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.next-dates h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid for 2 rows and 3 columns */
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling for individual date items */
+.date-item {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.date-item span {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.date-item:hover {
+  transform: scale(1.1); /* Adds hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dates-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dates-grid {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}

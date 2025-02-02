@@ -106,14 +106,24 @@ function Home() {
         </div>
       </section>
 
-      {/* Course Types */}
-      <section className="course-types">
+      {/* Course Types - Modalidades de Estudio */}
+      <section className="modalidades">
         <h2>Modalidades de Estudio</h2>
-        <div className="course-options">
-          <div className="course presencial">📍 Presencial</div>
-          <div className="course online">💻 Online</div>
+        <div className="modalidades-container">
+          {/* Presencial Classes */}
+          <div className="modalidad">
+            <img src="./assets/tlaquepaque_home.jpg" alt="Clases Presenciales" />
+            <div className="modalidad-text">Presencial</div>
+          </div>
+
+          {/* Online Classes */}
+          <div className="modalidad">
+            <img src="./assets/tlaquepaque.avif" alt="Clases Online" />
+            <div className="modalidad-text">Online</div>
+          </div>
         </div>
       </section>
+
 
       {/* CEFR Based */}
       <section className="cefr">
@@ -135,17 +145,36 @@ function Home() {
       </section>
 
       {/* Next Course Dates */}
-      <section className="next-dates">
+    <section className="next-dates">
         <h2>Próximos inicios de cursos</h2>
-        <ul>
-          <li>📅 13 de Enero 2025</li>
-          <li>📅 03 de Marzo 2025</li>
-          <li>📅 19 de Mayo 2025</li>
-          <li>📅 07 de Julio 2025</li>
-          <li>📅 08 de Septiembre 2025</li>
-          <li>📅 27 de Octubre 2025</li>
-        </ul>
+        <div className="dates-grid">
+          <div className="date-item">
+            <span>📅</span>
+            <p>13 de Enero 2025</p>
+          </div>
+          <div className="date-item">
+            <span>📅</span>
+            <p>03 de Marzo 2025</p>
+          </div>
+          <div className="date-item">
+            <span>📅</span>
+            <p>19 de Mayo 2025</p>
+          </div>
+          <div className="date-item">
+            <span>📅</span>
+            <p>07 de Julio 2025</p>
+          </div>
+          <div className="date-item">
+            <span>📅</span>
+            <p>08 de Septiembre 2025</p>
+          </div>
+          <div className="date-item">
+            <span>📅</span>
+            <p>27 de Octubre 2025</p>
+          </div>
+        </div>
       </section>
+
 
       {/* Contact Form */}
       <section className="contact-form">
