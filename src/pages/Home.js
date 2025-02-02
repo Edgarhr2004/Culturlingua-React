@@ -5,6 +5,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   return (
@@ -66,39 +68,77 @@ function Home() {
       {/* Benefits Section */}
       <section className="benefits">
         <h2>¿Por qué estudiar con nosotros?</h2>
-        <ul>
-          <li>Profesores certificados y experimentados</li>
-          <li>Ambiente de aprendizaje dinámico</li>
-          <li>Acceso a materiales exclusivos</li>
-          <li>Plataforma virtual complementaria</li>
-        </ul>
+        <div className="benefits-grid">
+          <div className="benefit-card">
+            <h3>🎓 Profesores Certificados</h3>
+            <p>Aprende con docentes expertos y calificados.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>📚 Material Exclusivo</h3>
+            <p>Accede a recursos complementarios y libros.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>💻 Plataformas Virtuales</h3>
+            <p>Aprende con herramientas interactivas en línea.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>🌎 Clases Presenciales y Online</h3>
+            <p>Estudia desde cualquier lugar o en nuestras aulas.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>🏆 Certificación Oficial</h3>
+            <p>Obtén diplomas y certificaciones internacionales.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>💯 Cursos garantizados</h3>
+            <p>Si repruebas el nivel, lo repites totalmente GRATIS.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>🎯 Talleres especializados</h3>
+            <p>Talleres enfocados en tu aprendizaje mediante la practica de tus habilidades.</p>
+          </div>
+          <div className="benefit-card">
+            <h3>🗣️ Intercambio de idiomas</h3>
+            <p>Podrás intercambiar idiomas con personas extranjeras.</p>
+          </div>
+        </div>
       </section>
+
+      <section className="about-linguahub">
+      <h2>¿Qué es LinguaHub?</h2>
+      <p>
+        LinguaHub es una plataforma de aprendizaje de idiomas diseñada para ofrecer
+        una experiencia educativa completa, con herramientas interactivas, contenido
+        personalizado y acceso a profesores certificados. Ya sea que desees mejorar
+        tus habilidades lingüísticas o comenzar desde cero, LinguaHub te brinda los
+        recursos para lograr tus metas.
+      </p>
+      <Link to="/linguahub" className="cta-button">Descubre más</Link>
+    </section>
+
+
 
        {/* Skills Section - Full Width */}
        <section className="skills-section">
         <div className="skill speaking">
-          <img src="/speaking.jpg" alt="Speaking" />
           <div className="skill-content">
             <h3>🗣️ Hablar</h3>
             <p>Mejora tu fluidez y confianza al hablar.</p>
           </div>
         </div>
         <div className="skill reading">
-          <img src="/reading.jpg" alt="Reading" />
           <div className="skill-content">
             <h3>📖 Leer</h3>
             <p>Desarrolla tu comprensión lectora con textos auténticos.</p>
           </div>
         </div>
         <div className="skill listening">
-          <img src="/listening.jpg" alt="Listening" />
           <div className="skill-content">
             <h3>🎧 Escuchar</h3>
             <p>Entrena tu oído con audios y diálogos reales.</p>
           </div>
         </div>
         <div className="skill writing">
-          <img src="/writing.jpg" alt="Writing" />
           <div className="skill-content">
             <h3>✍️ Escribir</h3>
             <p>Aprende a expresarte de forma clara y precisa.</p>
@@ -186,6 +226,7 @@ function Home() {
           <button type="submit">Enviar</button>
         </form>
       </section>
+      <br></br><br></br>
     </section>
   );
 }

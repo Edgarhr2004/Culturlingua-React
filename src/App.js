@@ -8,6 +8,8 @@ import Courses from './pages/ingles-presencial/Courses';
 import Contact from './pages/Contact';
 import { useState } from "react";
 import './style.css';
+import InglesOnline from './pages/ingles-online';
+import Linguahub from './pages/LinguaHub';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,8 +36,8 @@ export default function App() {
             <div className="menu-item">
               <Link to="/ingles-presencial" className="hover:underline">Inglés</Link>
               <div className="submenu">
-                <Link to="/ingles-presencial/Cursos" className="submenu-link">Presencial</Link>
-                <Link to="/ingles-presencial/Busca-tu-curso" className="submenu-link">Online</Link>
+                <Link to="/" className="submenu-link">Presencial</Link>
+                <Link to="/ingles-online" className="submenu-link">Online</Link>
               </div>
             </div>
             <div className="menu-item">
@@ -46,15 +48,16 @@ export default function App() {
               </div>
             </div>
             <Link to="/cursos" className="hover:underline">Cursos</Link>
+            <Link to="/LinguaHub" className="hover:underline">LinguaHub</Link>
             <Link to="/sobre-nosotros" className="hover:underline">Sobre Nosotros</Link>
             <Link to="/contacto" className="hover:underline">Contacto</Link>
           </div>
         </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ingles-presencial" element={<InglesPresencial />} />
-        <Route path="/ingles-presencial/Cursos" element={<Courses />} />
-        <Route path="/ingles-presencial/Busca-tu-curso" element={<BuscaTuCurso />} />
+        <Route path="/" element={<InglesPresencial />} />
+        <Route path="/ingles-online" element={<InglesOnline />} />
+        <Route path="/LinguaHub" element={<Linguahub />} />
         <Route path="/ingles-presencial/Certificaciones" element={<Certificaciones />} />
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
@@ -79,7 +82,7 @@ export default function App() {
           <ul>
             <li><a href="/">Inicio</a></li>
             <li><a href="/courses">Cursos</a></li>
-            <li><a href="/contact">Contacto</a></li>
+            <li><a href="/contacto">Contacto</a></li>
             <li><a href="/work-with-us">Trabaja con Nosotros</a></li>
           </ul>
         </div>
@@ -96,10 +99,10 @@ export default function App() {
         <div className="footer-section social">
           <h3>Síguenos</h3>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/Culturlinguagdl" target="_blank" rel="noopener noreferrer">
               <img src="/facebook-icon.png" alt="Facebook" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/culturlingua_gdl/" target="_blank" rel="noopener noreferrer">
               <img src="/instagram-icon.png" alt="Instagram" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
