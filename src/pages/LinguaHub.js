@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FaChartBar, FaChalkboardTeacher, FaBookOpen, FaGlobe, FaCreditCard, FaAward } from "react-icons/fa";
+import { FaChartBar, FaChalkboardTeacher, FaBookOpen, FaGlobe, FaCreditCard, FaAward, FaMobileAlt, FaUserClock, FaRobot } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 
 
@@ -39,8 +39,8 @@ function LinguaHub() {
         {
           icon: <FaCreditCard />,
           title: "Gestión de Pagos Segura",
-          description: "Paga cómodamente con múltiples opciones de pago y realiza seguimientos a tus facturas.",
-          benefit: "Sigue tu historial de pagos y realiza transacciones seguras desde la plataforma."
+          description: "Realiza seguimientos a tus recibos y pagos por nivel.",
+          benefit: "Sigue tu historial de pagos desde la plataforma."
         },
         {
           icon: <FaAward />,
@@ -49,10 +49,22 @@ function LinguaHub() {
           benefit: "Tus logros serán reconocidos globalmente y añadirán valor a tu CV."
         },
         {
-          icon: <FaUsers />,
-          title: "Comunidad Estudiantil",
-          description: "Interactúa con otros estudiantes a través de foros y grupos de discusión.",
-          benefit: "Construirás una red de contactos con compañeros de todo el mundo mientras aprendes."
+          icon: <FaMobileAlt />,
+          title: "Acceso 24/7 desde Cualquier Dispositivo",
+          description: "Nuestra plataforma está disponible en computadoras, tablets y celulares.",
+          benefit: "Aprende sin restricciones y aprovecha cada momento para estudiar, estés donde estés."
+        },
+        {
+          icon: <FaUserClock />,
+          title: "Horarios 100% Flexibles",
+          description: "Toma clases en vivo* o accede a las grabaciones en cualquier momento.",
+          benefit: "Ajusta tu aprendizaje a tu ritmo de vida sin perder contenido ni clases importantes."
+        },
+        {
+          icon: <FaRobot />,
+          title: "Chatbot de IA",
+          description: "Accede a un asistente virtual inteligente disponible las 24 horas para resolver tus dudas y ofrecer apoyo adicional.",
+          benefit: "Recibe ayuda instantánea sobre tus dudas de sobre clases, talleres, dinámicas, actividades, funcionalidades de la plataforma, etc."
         },
       ];
   return (

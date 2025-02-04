@@ -6,9 +6,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react"; // ✅ Import hooks
 
 
 function Home() {
+
+  const [data, setData] = useState([]); // ✅ Initialize state
+
+    useEffect(() => {
+        fetch("http://culturlingua-react.free.nf/api-public.php") // ✅ Make sure the path is correct
+        //fetch("http://localhost/LinguaHub-React/api.php")
+            .then((response) => response.json())
+            .then((data) => setData(data)) // ✅ Save API response
+            .catch((error) => console.error("Error fetching data:", error));
+    }, []);
+
   return (
     <section className="">
         <div className="home-container">
@@ -183,35 +195,16 @@ function Home() {
           <img src="/partner3.png" alt="Partner 3" />
         </div>
       </section>
-
       {/* Next Course Dates */}
     <section className="next-dates">
         <h2>Próximos inicios de cursos</h2>
         <div className="dates-grid">
-          <div className="date-item">
-            <span>📅</span>
-            <p>13 de Enero 2025</p>
-          </div>
-          <div className="date-item">
-            <span>📅</span>
-            <p>03 de Marzo 2025</p>
-          </div>
-          <div className="date-item">
-            <span>📅</span>
-            <p>19 de Mayo 2025</p>
-          </div>
-          <div className="date-item">
-            <span>📅</span>
-            <p>07 de Julio 2025</p>
-          </div>
-          <div className="date-item">
-            <span>📅</span>
-            <p>08 de Septiembre 2025</p>
-          </div>
-          <div className="date-item">
-            <span>📅</span>
-            <p>27 de Octubre 2025</p>
-          </div>
+          {data.map((user) => (
+            <div className="date-item" key={user.id}>
+              <span>📅</span>
+              <p >{user.fecha}</p>
+            </div>
+          ))}
         </div>
       </section>
 

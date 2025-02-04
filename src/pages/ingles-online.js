@@ -63,44 +63,55 @@ function InglesOnline() {
       </Swiper>
     </section>
 
-      {/* Benefits Section */}
-      <section className="benefits">
+    <section className="benefits">
         <h2>¿Por qué estudiar con nosotros?</h2>
         <div className="benefits-grid">
-          <div className="benefit-card">
-            <h3>🎓 Profesores Certificados</h3>
-            <p>Aprende con docentes expertos y calificados.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>📚 Material Exclusivo</h3>
-            <p>Accede a recursos complementarios y libros.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>💻 Plataformas Virtuales</h3>
-            <p>Aprende con herramientas interactivas en línea.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>🌎 Clases Presenciales y Online</h3>
-            <p>Estudia desde cualquier lugar o en nuestras aulas.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>🏆 Certificación Oficial</h3>
-            <p>Obtén diplomas y certificaciones internacionales.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>💯 Cursos garantizados</h3>
-            <p>Si repruebas el nivel, lo repites totalmente GRATIS.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>🎯 Talleres especializados</h3>
-            <p>Talleres enfocados en tu aprendizaje mediante la practica de tus habilidades.</p>
-          </div>
-          <div className="benefit-card">
-            <h3>🗣️ Intercambio de idiomas</h3>
-            <p>Podrás intercambiar idiomas con personas extranjeras.</p>
-          </div>
+            <div className="benefit-card">
+                <div className="benefit-icon">
+                    <i className="fas fa-graduation-cap"></i> {/* FontAwesome icon */}
+                </div>
+                <h3>✔️ Beneficios adicionales</h3>
+                <p>Todos los beneficios de las clases presenciales incluidos.</p>
+            </div>
+            <div className="benefit-card">
+              <h3>🎥 Acceso a Clases Grabadas</h3>
+              <p>Si no puedes asistir, todas las lecciones están grabadas. ¡Véelas en cualquier momento!</p>
+            </div>
+            <div className="benefit-card">
+              <h3>🏡 Comodidad de Estudiar Desde Casa</h3>
+              <p>Estudia cómodamente sin desplazamientos. ¡Tu aula está donde tú estés!</p>
+            </div>
+            <div className="benefit-card">
+              <h3>💻 Herramientas Interactivas</h3>
+              <p>Clases dinámicas con pizarras interactivas, juegos educativos y foros de discusión.</p>
+            </div>
+            <div className="benefit-card">
+              <h3>👨‍🏫 Tutorías y Soporte Personalizado</h3>
+              <p>Recibe ayuda individualizada de nuestros docentes.* ¡Nunca estarás solo!</p>
+            </div>
+            <div className="benefit-card">
+              <h3>💡 Clases Especializadas en Habilidades Digitales</h3>
+              <p>Desarrolla tus competencias digitales mientras aprendes el idioma. ¡El futuro está online!</p>
+            </div>
+            <div className="benefit-card">
+              <h3>📚 Material Exclusivo en Línea</h3>
+              <p>Accede a recursos digitales diseñados específicamente para mejorar tu aprendizaje.</p>
+            </div>
+            <div className="benefit-card">
+              <h3>📅 Acceso 24/7 a Recursos de Aprendizaje</h3>
+              <p>Las plataformas está disponible todo el día. ¡Recursos siempre a tu disposición!</p>
+            </div>
+            <div className="benefit-card">
+              <h3>🧑‍💻 Clases con Profesores en Vivo</h3>
+              <p>Interactúa en tiempo real con nuestros profesores altamente capacitados.</p>
+            </div>
+            <div className="benefit-card">
+              <h3>🔒 Seguridad y Privacidad</h3>
+              <p>Disfruta de una experiencia de aprendizaje segura, con tus datos protegidos en todo momento.</p>
+            </div>
         </div>
-      </section>
+    </section>
+
 
 
        {/* Skills Section - Full Width */}
