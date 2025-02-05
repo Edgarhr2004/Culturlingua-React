@@ -14,62 +14,62 @@ function Cursos() {
         {
           title: "Kinder",
           description: "4 a 6 años",
-          link: "/courses/general-english"
+          link: "/courses/Kinder"
         },
         {
           title: "Niños",
           description: "6 a 10 años",
-          link: "/courses/business-english"
+          link: "/courses/Ninos"
         },
         {
           title: "Jóvenes",
           description: "11 a 15 años.",
-          link: "/courses/exam-preparation"
+          link: "/courses/Jovenes"
         },
         {
           title: "Adultos",
           description: "+15 años",
-          link: "/courses/conversational-english"
+          link: "/courses/Adultos"
         },
         {
           title: "Inglés intensivo",
           description: "Todas las edades",
-          link: "/courses/french-beginner"
+          link: "/courses/Intensivo"
         },
         {
           title: "Clases Privadas",
           description: "Todas las edades",
-          link: "/courses/spanish-for-foreigners"
+          link: "/courses/Privadas"
         },
         {
           title: "Clases Empresariales",
           description: "Para el empleo",
-          link: "/courses/travel-english"
+          link: "/courses/Empresas"
         },
         {
           title: "Preparación para Examen",
           description: "+15 años",
-          link: "/courses/pronunciation"
+          link: "/courses/PreparacionExamen"
         },
         {
           title: "Cursos de Verano",
           description: "Para niños",
-          link: "/courses/advanced-english"
+          link: "/SummerCamp"
         },
         {
           title: "Certificaciones",
           description: "De acuerdo a tu nivel",
-          link: "/courses/french-intermediate"
+          link: "/Certificaciones-ingles"
         },
         {
           title: "Español para Extranjeros",
           description: "Aprende español con un enfoque en el mundo real.",
-          link: "/courses/business-spanish"
+          link: "/Spanish"
         },
         {
           title: "Inglés Garantizado",
           description: "100%. Si repruebas, repites gratis.",
-          link: "/courses/intensive-english"
+          link: "/"
         },
       ];
     

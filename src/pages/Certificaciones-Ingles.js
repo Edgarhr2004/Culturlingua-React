@@ -15,21 +15,21 @@ function CertificacionesIngles() {
           name: "Cambridge",
           description:
             "Certificación valida a nivel mundial. Si quieres comprar tu nivel de inglés en cualquier parte del mundo, esta es tu mejor opción.",
-          image: "/assets/cambridge.jpg",
+          image: "/assets/cambridge.JPG",
           link: "https://www.cambridgeenglish.org/latinamerica/exams-and-tests/qualifications/",
         },
         {
           name: "CENNI (SEP)",
           description:
             "Certificación valida solo en México. Si lo necesitas comprobar tu nivel de inglés para obtener tu titulo universitario o obtener un empleo en México, esta es tu mejor opción.",
-          image: "/assets/cenni.jpg",
+          image: "/assets/cenni.JPG",
           link: "https://dgair.sep.gob.mx/dir/cenni",
         },
         {
             name: "ELET by UKS",
             description:
               "El ELeT es un examen de acreditación del nivel de inglés computarizado y con resultados inmediatos. Se encuentra alineado al marco común europeo y al programa de Certificación Nacional del Nivel de Idioma (CENNI) de la SEP.",
-            image: "/assets/ELET_UKS.jpg",
+            image: "/assets/ELET_UKS.JPG",
             link: "https://www.uks.mx/productos/elet/",
           },
       ];

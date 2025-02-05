@@ -14,8 +14,8 @@ function Home() {
   const [data, setData] = useState([]); // ✅ Initialize state
 
     useEffect(() => {
-        fetch("http://culturlingua-react.free.nf/api-public.php") // ✅ Make sure the path is correct
-        //fetch("http://localhost/LinguaHub-React/api.php")
+        //fetch("http://culturlingua-react.free.nf/api-public.php") // ✅ Make sure the path is correct
+        fetch("http://localhost/LinguaHub-React/api.php")
             .then((response) => response.json())
             .then((data) => setData(data)) // ✅ Save API response
             .catch((error) => console.error("Error fetching data:", error));
@@ -32,7 +32,7 @@ function Home() {
         <h1>Welcome to Culturlingua</h1>
         <p>Your place to learn languages with certified teachers!</p>
         <br></br>
-        <button className="cta-button">Explore Courses</button>
+        <a href='/Cursos' className="cta-button">Explore Courses</a>
       </div>
     </div>
       {/* Photo Gallery */}

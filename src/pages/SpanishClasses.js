@@ -24,6 +24,11 @@ function SpanishClasses() {
       author: "María Esther Alatorre",
       rating: 5,
     },
+    {
+      text: "I can’t recommend Culturlingua enough! I spent two weeks in Tlaquepaque and loved every minute of it. In the morning, I had private instruction for four hours and in the afternoon the school arranged visits to area highlights customized to my interests including historical sites, museums, and artisan crafts. Both the classes and the excursions were entirely in Spanish. Additionally, the school helped me arrange housing and in short, made sure my experience was terrific.",
+      author: "Jill Durfee",
+      rating: 5,
+    },
   ];
 
   return (
