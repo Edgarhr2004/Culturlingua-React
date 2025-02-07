@@ -35,20 +35,20 @@ function Kinder() {
         <h2>Generalidades</h2>
         <div className="benefits-grid">
           <div className="benefit-card">
-            <h3>📚 Libro</h3>
-            <p>Aprende con docentes expertos y calificados.</p>
+            <h3>📖 Libro</h3>
+            <p>Look and See</p>
           </div>
           <div className="benefit-card">
-            <h3>📚 Editorial</h3>
-            <p>Accede a recursos complementarios y libros.</p>
+            <h3>🕮 Editorial</h3>
+            <p>National Geographic</p>
           </div>
           <div className="benefit-card">
-            <h3>🎯 Horas por semana</h3>
-            <p>Aprende con herramientas interactivas en línea.</p>
+            <h3>⌛ Horas por semana</h3>
+            <p>3 hrs.</p>
           </div>
           <div className="benefit-card">
-            <h3>🗣️ Duración del nivel</h3>
-            <p>Estudia desde cualquier lugar o en nuestras aulas.</p>
+            <h3>📆 Duración del nivel</h3>
+            <p>15 semanas</p>
           </div>
         </div>
       </section>

@@ -42,7 +42,6 @@ function SpanishClasses() {
         <h1>Spanish Lessons at Culturlingua</h1>
         <p>Your place to learn Spanish with certified and experienced teachers.</p>
         <br></br>
-        <button className="cta-button">Explore Courses</button>
       </div>
     </div>
       {/* Photo Gallery */}

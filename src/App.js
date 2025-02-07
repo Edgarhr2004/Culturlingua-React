@@ -19,6 +19,15 @@ import Services from "./pages/Services";
 import OurLocation from "./pages/OurLocation";
 import Kinder from "./pages/courses/Kinder";
 import Ninos from "./pages/courses/Ninos";
+import Jovenes from "./pages/courses/Jovenes";
+import Adultos from "./pages/courses/Adultos";
+import Intensivo from "./pages/courses/Intensivo";
+import Privadas from "./pages/courses/Privadas";
+import Empresas from "./pages/courses/Empresas";
+import Certificaciones from "./pages/courses/Certificaciones";
+import ScrollToTop from "./ScrollToTop";
+import CourseFinderForm from "./pages/CourseFinderForm";
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,6 +40,7 @@ export default function App() {
   return (
     <div className="app-container">
     <Router>
+    <ScrollToTop />
     <nav className="navbar">
           {/* Home Logo */}
           <Link to="/" className="home-button">
@@ -55,6 +65,7 @@ export default function App() {
                 <Link to="/ingles-online" onClick={handleLinkClick} className="submenu-link">Online</Link>
                 <Link to="/Certificaciones-Ingles" onClick={handleLinkClick} className="submenu-link">Certificaciones</Link>
                 <Link to="/Examen-de-ubicacion" onClick={handleLinkClick} className="submenu-link">Examen de Ubicación</Link>
+                <Link to="/EncuentraTuCurso" onClick={handleLinkClick} className="submenu-link">Encuentra Tu Curso</Link>
               </div>
             </div>
             <div className="menu-item">
@@ -103,12 +114,13 @@ export default function App() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/courses/Kinder" element={<Kinder />} />
         <Route path="/courses/Ninos" element={<Ninos />} />
-        <Route path="/courses/Jovenes" element={<Contact />} />
-        <Route path="/courses/Adultos" element={<Contact />} />
-        <Route path="/courses/Intensivo" element={<Contact />} />
-        <Route path="/courses/Privadas" element={<Contact />} />
-        <Route path="/courses/Empresas" element={<Contact />} />
-        <Route path="/courses/PreparacionExamen" element={<Contact />} />
+        <Route path="/courses/Jovenes" element={<Jovenes />} />
+        <Route path="/courses/Adultos" element={<Adultos />} />
+        <Route path="/courses/Intensivo" element={<Intensivo />} />
+        <Route path="/courses/Privadas" element={<Privadas />} />
+        <Route path="/courses/Empresas" element={<Empresas />} />
+        <Route path="/courses/PreparacionExamen" element={<Certificaciones />} />
+        <Route path="/EncuentraTuCurso" element={<CourseFinderForm />} />
         <Route path="https://www.cultur-lingua.com.mx"/>
       </Routes>
     </Router>
@@ -128,7 +140,7 @@ export default function App() {
           <h3>Enlaces Rápidos</h3>
           <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/courses">Cursos</a></li>
+            <li><a href="/Cursos">Cursos</a></li>
             <li><a href="/contacto">Contacto</a></li>
             <li><a href="/work-with-us">Trabaja con Nosotros</a></li>
           </ul>

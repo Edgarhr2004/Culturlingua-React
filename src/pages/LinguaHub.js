@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { FaChartBar, FaChalkboardTeacher, FaBookOpen, FaGlobe, FaCreditCard, FaAward, FaMobileAlt, FaUserClock, FaRobot } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -78,6 +80,7 @@ function LinguaHub() {
         <h1>Conoce LinguaHub</h1>
         <p>Tu nuevo seguimiento de aprendizaje basado en la tecnología.</p>
         <br></br>
+        <Link to="https://cultur-lingua.com.mx/" className="cta-button">Entra a LinguaHub</Link>
       </div>
     </div>
 

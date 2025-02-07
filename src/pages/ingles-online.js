@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 
 function InglesOnline() {
   return (
@@ -17,8 +18,8 @@ function InglesOnline() {
       <div className="home-content">
         <h1>Culturlingua Virtual</h1>
         <p>Your place to learn languages with certified teachers!</p>
-        <br></br>
-        <button className="cta-button">Explore Courses</button>
+        <br></br><br></br>
+        <Link to="/Cursos" className="cta-button">Explorar Cursos</Link>
       </div>
     </div>
       {/* Photo Gallery */}

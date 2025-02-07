@@ -703,10 +703,6 @@ body {
   z-index: 1000; /* ✅ Ensures it stays above other elements */
 }
 
-.home-container {
-  margin-top: 80px; /* ✅ Push content down to avoid being hidden */
-}
-
 
 .modalidades {
   text-align: center;
@@ -1901,4 +1897,174 @@ p {
     text-decoration: none;
     font-size: 1rem;
   }
+}
+
+/* Form section */
+#course-finder-form {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#course-finder-form h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#course-finder-form p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Card container */
+#course-finder-form .MuiCard-root {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+#course-finder-form .MuiCard-root:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* MUI form */
+#course-finder-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Specific MUI FormField Styles */
+#course-finder-form .MuiTextField-root,
+#course-finder-form .MuiFormControl-root {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+/* Select and MenuItem Styling */
+#course-finder-form .MuiSelect-root,
+#course-finder-form .MuiMenuItem-root {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+#course-finder-form .MuiFormControlLabel-root {
+  font-size: 1rem;
+  color: #333;
+}
+
+#course-finder-form .MuiRadio-root {
+  color: #ff7e5f !important;
+}
+
+/* Submit Button */
+#course-finder-form .MuiButton-root {
+  padding: 12px;
+  font-weight: bold;
+  background-color: #ff7e5f;
+  color: #fff;
+  text-transform: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#course-finder-form .MuiButton-root:hover {
+  background-color: #feb47b;
+}
+
+/* Styling for Specific Text Field (e.g., for the 'Nombre' Field) */
+#course-finder-form .MuiTextField-root.MuiInputBase-root {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+/* Specific MUI Radio Group */
+#course-finder-form .MuiFormControlLabel-root .MuiRadio-root {
+  color: #ff7e5f !important;
+}
+
+#course-finder-form .MuiSelect-root {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+#course-finder-form .MuiRadioGroup-root {
+  gap: 10px;
+}
+
+#course-finder-form button[type="submit"] {
+  padding: 12px;
+  font-weight: bold;
+  background-color: #ff7e5f;
+  color: white;
+  text-transform: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#course-finder-form button[type="submit"]:hover {
+  background-color: #feb47b;
+}
+/* Centering form elements */
+#course-finder-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Card Style */
+#course-finder-form .MuiCard-root {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+#course-finder-form .MuiCard-root:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Select and MenuItem Styling */
+#course-finder-form .MuiSelect-root,
+#course-finder-form .MuiMenuItem-root {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+#course-finder-form .MuiFormControlLabel-root {
+  font-size: 1rem;
+  color: #333;
+}
+
+#course-finder-form .MuiRadio-root {
+  color: #ff7e5f !important;
+}
+
+/* Submit Button */
+#course-finder-form .MuiButton-root {
+  padding: 12px;
+  font-weight: bold;
+  background-color: #ff7e5f;
+  color: #fff;
+  text-transform: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#course-finder-form .MuiButton-root:hover {
+  background-color: #feb47b;
 }
